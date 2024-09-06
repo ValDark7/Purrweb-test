@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  width: 1200px;
+  height: 700px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 30px;
+  margin-top: 60px;
+
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+  z-index: 3;
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(171, 171, 171);
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .dot:last-child {
+    margin-right: 0px;
+  }
+
+  .dot.active {
+    background-color: rgb(32, 32, 32);
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.prev,
+.next {
+  width: 34px;
+  height: 34px;
+  margin-top: 30px;
+}
